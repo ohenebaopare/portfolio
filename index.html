@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Oheneba Opare</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="fixed w-full top-0 z-10 bg-white shadow-md">
+      <nav
+        class="flex flex-col md:flex-row justify-between items-center px-6 py-4 md:px-20"
+      >
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <a href="#" class="text-2xl font-bold text-teal-600">OK</a>
+          <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg
+              class="w-6 h-6 text-teal-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          id="nav-links"
+          class="hidden md:flex flex-col md:flex-row gap-6 md:gap-8 mt-4 md:mt-0"
+        >
+          <li>
+            <a href="#" class="hover:text-teal-500 transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-teal-500 transition-colors"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-teal-500 transition-colors"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="hover:text-teal-500 transition-colors"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="hover:text-teal-500 transition-colors"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#resume" class="hover:text-teal-500 transition-colors"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-teal-500 transition-colors"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section
+      class="flex flex-col lg:flex-row items-start justify-center pt-20 bg-teal-50"
+    >
+      <div class="w-full lg:w-1/2 relative">
+        <div class="relative w-full overflow-hidden">
+          <img
+            src="/images/me.jpeg"
+            alt="Oheneba Opare"
+            class="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent pointer-events-none"
+          ></div>
+        </div>
+      </div>
+      <div
+        class="w-full lg:w-1/2 flex items-center justify-center px-6 py-12 lg:px-20 lg:min-h-screen"
+      >
+        <div class="text-center lg:text-left">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-teal-700"
+          >
+            I'm Oheneba Opare
+          </h1>
+          <p class="text-xl md:text-2xl mt-2 text-gray-700">
+            A Junior Web Developer
+          </p>
+          <p class="text-lg mt-4 text-gray-600">Get To Know Me</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 px-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row items-center gap-8 justify-center items-center"
+      >
+        <img
+          src="./images/mon.jpeg"
+          alt="Oheneba Opare"
+          class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover"
+        />
+        <div class="bg-teal-50 p-6 rounded-lg shadow-md max-w-2xl">
+          <h1 class="text-3xl font-bold text-center text-teal-700 mb-4">
+            My Bio
+          </h1>
+          <p class="text-lg leading-relaxed">
+            An accounting graduate with a strong background in financial
+            analysis and data management, I'm currently transitioning into web
+            development. With a keen eye for detail and a passion for
+            problem-solving, I'm leveraging my analytical skills to build
+            interactive websites and dynamic user experiences. I'm excited to
+            blend my expertise in numbers with programming to contribute to the
+            tech world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gray-100">
+      <h1 class="text-3xl font-bold text-center text-teal-700 mb-10">Skills</h1>
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:bg-teal-100 transition-colors flex flex-col items-center"
+        >
+          <img src="./images/html-5.png" alt="HTML" class="w-20 h-20 mb-4" />
+          <p class="text-lg font-semibold">HTML</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:bg-teal-100 transition-colors flex flex-col items-center"
+        >
+          <img src="./images/css-3.png" alt="CSS" class="w-20 h-20 mb-4" />
+          <p class="text-lg font-semibold">CSS</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:bg-teal-100 transition-colors flex flex-col items-center"
+        >
+          <img
+            src="./images/java-script.png"
+            alt="JavaScript"
+            class="w-20 h-20 mb-4"
+          />
+          <p class="text-lg font-semibold">JavaScript</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md hover:bg-teal-100 transition-colors flex flex-col items-center"
+        >
+          <img src="./images/nodejs.png" alt="Node.js" class="w-20 h-20 mb-4" />
+          <p class="text-lg font-semibold">Node.js</p>
+        </div>
+      </div>
+      <div class="flex justify-center gap-4 mt-8">
+        <button
+          class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+        >
+          Hire Me
+        </button>
+        <button
+          class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+        >
+          Download CV
+        </button>
+      </div>
+    </section>
+
+    <section id="portfolio" class="py-20">
+      <h1 class="text-3xl font-bold text-center text-teal-700 mb-10">
+        My Portfolio
+      </h1>
+      <ul class="flex flex-wrap justify-center gap-6 mb-8">
+        <li
+          class="px-4 py-2 bg-teal-100 rounded-full hover:bg-teal-200 cursor-pointer"
+        >
+          All
+        </li>
+        <li
+          class="px-4 py-2 bg-teal-100 rounded-full hover:bg-teal-200 cursor-pointer"
+        >
+          Frontend
+        </li>
+        <li
+          class="px-4 py-2 bg-teal-100 rounded-full hover:bg-teal-200 cursor-pointer"
+        >
+          Backend
+        </li>
+      </ul>
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <img
+          src="./images/Screenshot (6).png"
+          alt="Project 1"
+          class="w-full h-48 object-cover rounded-lg shadow-md"
+        />
+        <img
+          src="./images/Screenshot (7).png"
+          alt="Project 2"
+          class="w-full h-48 object-cover rounded-lg shadow-md"
+        />
+        <img
+          src="./images/Screenshot (8).png"
+          alt="Project 3"
+          class="w-full h-48 object-cover rounded-lg shadow-md"
+        />
+        <img
+          src="./images/Screenshot (9).png"
+          alt="Project 4"
+          class="w-full h-48 object-cover rounded-lg shadow-md"
+        />
+      </div>
+    </section>
+
+    <section id="services" class="py-20 bg-teal-50">
+      <h1 class="text-3xl font-bold text-center text-teal-700 mb-10">
+        Services
+      </h1>
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+        >
+          <i class="fas fa-desktop text-4xl text-teal-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Development</h3>
+          <p class="text-gray-600">
+            Building reliable, secure, and performant web application backends.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+        >
+          <i class="fa fa-binoculars text-4xl text-teal-600 mb-4"></i>
+          <h3 class="text-2xl font-semibold mb-2">Design</h3>
+          <p class="text-gray-600">
+            Creating seamless and enjoyable user experiences with responsive
+            frontends.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="py-20">
+      <h1 class="text-3xl font-bold text-center text-teal-700 mb-10">Resume</h1>
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row gap-8 justify-center items-center"
+      >
+        <img
+          src="./images/mon.jpeg"
+          alt="Oheneba Opare"
+          class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover mx-auto md:mx-0"
+        />
+        <div class="flex flex-col gap-8">
+          <div>
+            <h3 class="text-2xl font-semibold text-teal-700 mb-4">
+              Work Experience
+            </h3>
+            <h4 class="text-xl font-medium">Junior Accountant</h4>
+            <div class="flex flex-col sm:flex-row justify-between gap-4">
+              <p>
+                <i class="fa fa-briefcase mr-2 text-teal-600"></i>Electricity
+                Company of Ghana | Legon
+              </p>
+              <p>
+                <i class="fas fa-calendar-alt mr-2 text-teal-600"></i>2022 -
+                2023
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-teal-700 mb-4">Education</h3>
+            <h4 class="text-xl font-medium">Bachelor In Accounting</h4>
+            <div class="flex flex-col sm:flex-row justify-between gap-4">
+              <p>
+                <i class="fa fa-graduation-cap mr-2 text-teal-600"></i
+                >University of Professional Studies Accra
+              </p>
+              <p>
+                <i class="fas fa-calendar-alt mr-2 text-teal-600"></i>2018 -
+                2022
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-100">
+      <h1 class="text-3xl font-bold text-center text-teal-700 mb-10">
+        Contact Me
+      </h1>
+      <div class="container mx-auto px-4 flex flex-col lg:flex-row gap-8">
+        <div class="w-full lg:w-1/2 bg-white p-6 rounded-lg shadow-md">
+          <form>
+            <div class="flex flex-col sm:flex-row gap-4 mb-4">
+              <div class="flex-1">
+                <label
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  for="first-name"
+                  >First Name</label
+                >
+                <input
+                  class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  id="first-name"
+                  type="text"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="flex-1">
+                <label
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  for="last-name"
+                  >Last Name</label
+                >
+                <input
+                  class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+                  id="last-name"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="email"
+                >Email Address</label
+              >
+              <input
+                class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+                id="email"
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="message"
+                >Message</label
+              >
+              <textarea
+                class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-teal-500"
+                id="message"
+                placeholder="Message"
+                rows="4"
+              ></textarea>
+            </div>
+            <button
+              class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+        <div
+          class="w-full lg:w-1/2 bg-teal-600 text-white p-6 rounded-lg shadow-md flex items-center justify-center"
+        >
+          <div class="text-center">
+            <h3 class="text-lg font-bold mb-4">Contact Information</h3>
+            <p class="mb-2">
+              <i class="fas fa-map-marker-alt mr-2"></i>Oyarifa-Special
+            </p>
+            <p class="mb-2">
+              <i class="fas fa-phone mr-2"></i>+233 50 467 6984
+            </p>
+            <p class="mb-2">
+              <i class="fas fa-envelope mr-2"></i>keskot87@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-teal-800 text-white py-4 text-center">
+      <p>© 2025 Oheneba Opare. Be Safe.</p>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const navLinks = document.getElementById("nav-links");
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
